@@ -23,11 +23,12 @@ public class _Stream {
                 new Person("Alice", FEMALE)
                 );
 
-//        System.out.println("*****************");
-//        people.stream().map(p -> p.gender).collect(Collectors.toSet()).forEach(System.out::println);
-//        System.out.println("*****************");
-//        people.stream().map(p -> p.gender).collect(Collectors.toList() ).forEach(System.out::println);
-//        System.out.println("*****************");
+        System.out.println("*****************");
+        people.stream().map(p -> p.gender).collect(Collectors.toSet()).forEach(System.out::println);
+        System.out.println("*****************");
+        people.stream().map(p -> p.gender).collect(Collectors.toList() ).forEach(System.out::println);
+        System.out.println("*****************");
+
 //
 //
 //        System.out.println(people.stream().mapToInt(person -> person.name.length()));
@@ -42,8 +43,6 @@ public class _Stream {
 
         boolean containsAnyFemale = people.stream().anyMatch(person -> FEMALE.equals(person.gender));
         System.out.println("containsAnyFemale="+containsAnyFemale);
-
-        people.stream().    
     }
 
     static class Person{
