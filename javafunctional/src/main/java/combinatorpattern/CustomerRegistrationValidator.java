@@ -29,7 +29,7 @@ public interface CustomerRegistrationValidator
     default CustomerRegistrationValidator and (CustomerRegistrationValidator other) {
         return customer -> {
             ValidationResult result = this.apply(customer);
-            return validationResult.equals(SUCCESS) ? other.apply(customer) : result;
+            return result.equals(SUCCESS) ? other.apply(customer) : result;
         };
     }
 }
