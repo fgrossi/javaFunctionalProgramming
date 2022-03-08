@@ -2,7 +2,7 @@ package finalsection;
 
 import java.util.function.Consumer;
 
-public class Main {
+public class Callbacks {
 
     public static void main(String[] args) {
         hello("John", null, (value -> System.out.println("no lastName provided for " + value)));
